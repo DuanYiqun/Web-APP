@@ -23,7 +23,7 @@ $(function () {
                 event.preventDefault();
                 var $form = $('#vm');
                 if (! this.name.trim()) {
-                    return $form.showFormError('请输入名字');
+                    return $form.showFormError('Please type your name');
                 }
                 if (! validateEmail(this.email.trim().toLowerCase())) {
                     return $form.showFormError('请输入正确的Email地址');
